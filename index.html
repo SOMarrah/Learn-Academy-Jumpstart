@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Space Invader</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3c/Brown_Planet.png" />
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <h1>Find the hidden treasure in the planets!</h1>
+    <h2>Rules are as follows:</h2>
+    <ol class="center">
+      <li>Click the boxes to search for treasure inside the planets!/li>
+      <li>If you click on the bomb, you lose</li>
+      <li>If you click on the treasure, you win</li>
+      <li>If you run out of fuel you lose.</li>
+    </ol>
+    <div id="gameboard">
+    <table class="center" onClick="onClick()">
+          <tr>
+            <td class="zero" id=0 onclick="treasure(0)">    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Bringer_of_War_Planet.png" width= 90px /></td>
+            <td class="first" id=1 onclick="treasure(1)"><img src="https://nineplanets.org/wp-content/uploads/2020/03/sun.png" width= 90px /></td>
+            <td class="second" id=2 onclick="treasure(2)"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Gajillion_Islands_Planet.png" width= 90px /></td>
+            <td class="third" id=3 onclick="treasure(3)"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Populated_Planet.png" width= 90px /></td>
+
+          </tr>
+          <tr>
+            <td class="fourth" id=4 onclick="treasure(4)"><img src="https://images.freeimg.net/rsynced_images/pluto-2201446_1280.png" width= 90px /></td>
+            <td class="fifth" id=5 onclick="treasure(5)"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Eris-transparent.png" width= 90px /></td>
+            <td class="sixth" id=6 onclick="treasure(6)"><img src="https://cdn.pixabay.com/photo/2016/04/24/04/53/globe-1348777_1280.png" width= 90px /></td>
+            <td class="seventh" id=7 onclick="treasure(7)"><img src="https://cdn.pixabay.com/photo/2022/02/08/15/12/sun-7001569_1280.png" width= 90px /></td>
+          </tr>
+          <tr>
+            <td class="eighth" id=8 onclick="treasure(8)"><img src="https://cdn.pixabay.com/photo/2013/07/12/13/24/atmosphere-146971_1280.png" width= 90px /></td>
+            <td class="ninth" id=9 onclick="treasure(9)"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Ice_planet.png" width= 90px /></td>
+            <td class="tenth" id=10 onclick="treasure(10)"><img src="https://cdn.pixabay.com/photo/2020/09/14/17/01/clouds-5571507_1280.png" width= 90px /></td>
+            <td class="eleventh" id=11 onclick="treasure(11)"><img src="https://nineplanets.org/wp-content/uploads/2020/03/earth.png" width= 90px /></td>
+          </tr>
+          <tr>
+            <td class="twelfth" id=12 onclick="treasure(12)"><img src="https://nineplanets.org/wp-content/uploads/2019/09/saturn.png" width= 90px /></td>
+            <td class="thirteenth" id=13 onclick="treasure(13)"><img src="https://nineplanets.org/wp-content/uploads/2019/09/mercury.png" width= 90px /></td>
+            <td class="fourteenth" id=14 onclick="treasure(14)"><img src="https://images.freeimg.net/rsynced_images/jupiter-25468_1280.png" width= 90px /></td>
+            <td class="fifteenth" id=15 onclick="treasure(15)" ><img src="https://cdn2.picryl.com/photo/2019/06/27/l98-59b-198ad2-1024.png" width= 90px /></td>
+
+          </tr>
+        </table>
+      </div>
+<p>Wins: <a id="wins">0</a> Fuel: <a id="clicks">0 </a> out of 8. Loss: <a id="loss">0</a></p>
+    <button type="button" onclick="reload()">Reset Planets</button>
+    <footer>&copy Andrew Luna | Stephen OMarrah | Michael Hodge | <a href="https://spaceplace.nasa.gov/menu/space/" target="_blank">Learn About Space</a></footer>
+<script type="text/javascript" src="treasurehunt.js"></script>
+  </body>
+</html>
